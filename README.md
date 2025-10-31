@@ -1,7 +1,7 @@
 # Ace-Academics
 Repo
 
-Problem statement:
+Problem statement: Students have trouble finding study spots due to
 
 How will your tech solve it?:
 
