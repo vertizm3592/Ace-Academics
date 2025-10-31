@@ -1,6 +1,6 @@
 # Ace-Academics
 
-Problem statement: Students have trouble finding study spots due to
+Problem statement:
 
 How will your tech solve it?:
 
