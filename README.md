@@ -9,6 +9,7 @@
     Diya Basnet - diyab123
     Marvin Vertiz - vertizm3592
     Kaiden Brown - Kbreezy6
+    Jiseung Chlole - 
 
 #Setup Instructions: 
 
