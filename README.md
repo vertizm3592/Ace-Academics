@@ -4,6 +4,10 @@
 On a campus as big as UNT, socializing over coursework is a struggle. It can be difficult to find the right study group, tutors, mentors, or even the right study spot. Especially during finals and midterms week, when the library is full students find it overwhelming to find a perfect study spot, leaving students stressed out. 
 
 #Team Members 
+    Joshua Vo - joshuacvo
+    Diya Basnet - diyab123
+    Martin Vertiz - vertizm3592
+    Kaiden Brown - Kbreezy6
 
 #Setup Instructions: 
 
