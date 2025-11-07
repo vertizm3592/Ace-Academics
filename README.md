@@ -7,7 +7,7 @@
 #Team Members 
     Joshua Vo - joshuacvo
     Diya Basnet - diyab123
-    Martin Vertiz - vertizm3592
+    Marvin Vertiz - vertizm3592
     Kaiden Brown - Kbreezy6
 
 #Setup Instructions: 
