@@ -22,6 +22,7 @@
 #How to Contribute
 
 #Current Status 
+*Working on creating front end of website
 
 #License 
 
