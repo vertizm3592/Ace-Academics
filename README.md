@@ -16,6 +16,8 @@
 #Technologies Used 
 
 #Project Structure 
+* Shared Projects Style A
+* 
 
 #How to Contribute
 
