@@ -31,4 +31,4 @@ We can set up an optional premium subscription for students to set up a one on o
 Signed: Marvin Vertiz, Kaiden Brown, Josh V, Jiseung Choe, Diya Basnet 
 Test commit from my laptop
 ### Added a practice section
-This change was made in a feature branch for the Git assignment.
+This change was made in a feature branch for the Git assignment. 1
