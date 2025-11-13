@@ -29,3 +29,4 @@
 We can set up an optional premium subscription for students to set up a one on one study mentoring and tutoring session with their preferred instructors. Furthermore, they get priority while booking a study room or booth in the library and also access to lab or study spaces equipped with resources (unlocked via NFC).
 
 Signed: Marvin Vertiz, Kaiden Brown, Josh V, Jiseung Choe, Diya Basnet 
+Test commit from my laptop
