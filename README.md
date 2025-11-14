@@ -12,7 +12,9 @@
     Jiseung Choe - ChoeJoseph
 
 #Setup Instructions: 
-* Working on just the front-end (HTML, CSS, JS) 
+* Decide on the layout of the website
+* Add the framework for HTML
+* 
 
 #Technologies Used 
 
@@ -28,7 +30,8 @@
 #How to Contribute
 
 #Current Status 
-*Working on creating front end of website
+*Working on creating front end of website (HTML, CSS, JS) 
+
 
 #License 
 
