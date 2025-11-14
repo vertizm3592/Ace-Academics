@@ -12,13 +12,16 @@
     Jiseung Choe - ChoeJoseph
 
 #Setup Instructions: 
+* Decide on the layout of the website
+* Add the framework for HTML
+* 
 
 #Technologies Used 
 
 #Project Structure 
 * Shared Projects Style A
 
-#Features To Add 
+#Features To Add ??
 * Forms layout for students to submit their topic of discussion request
 * Feed layout for students to post study spots on campus
 * Rating feature to rate previous study sessions, study spots or instructor
@@ -27,7 +30,8 @@
 #How to Contribute
 
 #Current Status 
-*Working on creating front end of website
+*Working on creating front end of website (HTML, CSS, JS) 
+
 
 #License 
 
