@@ -12,13 +12,14 @@
     Jiseung Choe - ChoeJoseph
 
 #Setup Instructions: 
+* Working on just the front-end (HTML, CSS, JS) 
 
 #Technologies Used 
 
 #Project Structure 
 * Shared Projects Style A
 
-#Features To Add 
+#Features To Add ??
 * Forms layout for students to submit their topic of discussion request
 * Feed layout for students to post study spots on campus
 * Rating feature to rate previous study sessions, study spots or instructor
