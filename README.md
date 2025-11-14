@@ -27,6 +27,9 @@
 * Rating feature to rate previous study sessions, study spots or instructor
 * Feed layout to see ongoing study sessions 
 
+
+
+
 #How to Contribute
 
 #Current Status 
