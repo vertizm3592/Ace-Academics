@@ -1,5 +1,5 @@
 <script>
-  function Addpost() {
+  function AddPost() {
     
   } 
   </script>
