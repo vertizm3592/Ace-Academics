@@ -5,3 +5,4 @@ Rating feature to rate previous study sessions, study spots or instructor,
 Feed layout to see ongoing study sessions, 
 
 
+The main deliverable will be a login/authentication page, and a landing page, as discussed on Fri Nov 21, 2025.
