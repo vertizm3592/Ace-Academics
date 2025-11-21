@@ -2,6 +2,73 @@
 <html>
 <head>
 <title>Ace-Academics</title>  
+
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+    }
+
+    
+    #sidebar {
+        width: 220px;
+        background-color: #1e1e2f;
+        color: white;
+        height: 100vh;
+        padding: 20px;
+        transition: width 0.3s;
+        overflow: hidden;
+    }
+
+    #sidebar.collapsed {
+        width: 0;
+        padding: 20px 0;
+    }
+
+    #sidebar h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #sidebar ol {
+        padding-left: 20px;
+    }
+
+    #sidebar li {
+        margin: 12px 0;
+        cursor: pointer;
+        list-style: none;
+        background-color: #2b2b42;
+        padding: 10px;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    #sidebar li:hover {
+        background-color: #3c3c5e;
+    }
+
+    
+    #content {
+        flex: 1;
+        padding: 25px;
+    }
+
+    
+    #toggleBtn {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        background-color: #1e1e2f;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 100;
+    }
+  </style>
 </head>
 <body>
   <h1> Welcome to Ace Academics!</h1>
