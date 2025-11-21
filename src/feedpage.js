@@ -1,4 +1,6 @@
 <script>
-  
+  function AddPost() {
+    
+  } 
   </script>
 
