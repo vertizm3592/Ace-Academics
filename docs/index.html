@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ace-Academics</title>  
+  <title>Ace-Academics</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f9f9f9; /* 살짝 밝은 배경 */
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
     }
 
+    /* Navigation Menu */
     ol {
-      list-style: none;      
+      list-style: none;
       padding: 0;
       display: flex;
-      justify-content: center; 
-      gap: 20px;              
+      justify-content: center;
+      gap: 20px;
       font-size: 18px;
       margin-top: 20px;
     }
 
-    /* Navigation link base style */
     a {
       text-decoration: none;
       color: black;
-      font-weight: 500;
     }
 
     a:hover {
-      color: #0047ab;
+      color: #0066cc;
     }
 
-    /* Sign Up button style */
+    /* Sign Up button */
     .signup-btn {
-      padding: 8px 14px;
+      padding: 6px 12px;
       background-color: #4CAF50;
-      color: white !important;
-      border-radius: 8px;
-      font-weight: bold;
+      color: white;
+      border-radius: 6px;
     }
 
     .signup-btn:hover {
       background-color: #45a049;
+    }
+
+    /* Title spacing */
+    h1 {
+      margin-top: 40px;
+    }
+
+    /* Time text style */
+    #time {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
     }
 
   </style>
@@ -51,15 +61,29 @@
 
   <h1>Welcome to Ace Academics!</h1>
 
+  <!-- Display real-time current time -->
+  <p id="time">Loading time...</p>
+
   <ol>
     <li><a href="index.html">Home</a></li>
     <li><a href="courses.html">Courses/Topics</a></li>
     <li><a href="studyspots.html">Study Spots</a></li>
     <li><a href="studysessions.html">Study Sessions</a></li>
-
-    <!-- Sign Up styled button -->
     <li><a href="login.html" class="signup-btn">Sign Up</a></li>
   </ol>
+
+  <script>
+    // Update the time every second
+    function updateTime() {
+      const now = new Date();
+      document.getElementById("time").textContent =
+        "Current Time: " + now.toLocaleTimeString();
+    }
+
+    // Start interval timer
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
 
 </body>
 </html>
