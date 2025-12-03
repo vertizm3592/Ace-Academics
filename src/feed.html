@@ -8,25 +8,15 @@
     <input id = "spotName" placeholder = "Spot Name">
     <textarea id="description" placeholder = "Short Description"> </textarea>
     <input id ="tags" placeholder="Tags"> 
-    <button onclick="addPost()"> Post </button> 
-    </div>
-
-      
-    <div class = "container"> 
-      <div class = "post-form">
-        <h3> Create a Post </h3>
-        <select id = "Rating"> 
+    <select id = "Rating"> 
           <option value="⭐">⭐</option>
           <option value="⭐⭐">⭐⭐</option>
           <option value="⭐⭐⭐">⭐⭐⭐</option>
           <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
           <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
         </select>
-        <textarea id="input" placeholder="Write a brief description of your experience.">
-        </textarea>
-        <button class="button" onclick="AddPost()"> Post </button>
-
-        <div id="feed"> </div> 
-      </div>
+    <button onclick="addPost()"> Post </button> 
+    </div>
+    <div class = "feed" id="feed"> </div> 
   </body>
 </html>
