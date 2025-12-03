@@ -16,7 +16,7 @@
     justify-content: center;
   }
 
-  #createpost {
+  #creatediscussion {
     background: #FFF2EB;
     padding: 25px;
     width: 100%;
@@ -24,12 +24,12 @@
     box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
   }
 
-  #createpost h3 {
+  #creatediscussion h3 {
     text-align: center;
     margin-bottom: 10px;
   }
 
-  input, textarea, select {
+  input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 12px;
@@ -54,7 +54,7 @@
     background: #463de0;
   }
 
-  .feed {
+  .discuss {
     width: 450px;
     margin-top: 25px;
   }
@@ -63,11 +63,14 @@
 
   <body> 
     <h1> Share your study sessions here!! </h1>
+    <div class="center-box">
     <div id="creatediscussionForm">
       <input id="topic" placeholder="Discussion Topic">
       <input id="class" placeholder="Class ID"> 
       <textarea id="description" placeholder="Topics Discussed"></textarea> 
       <button onclick="addDiscussion()">Discuss</button>
     </div>
+
+    <div class="discuss" id="discuss"></div>
   </body>
 </html>
