@@ -1,44 +1,42 @@
 <html> 
   <head>
-    <title> Study Spots and Sessions </title>
+    <title> Study Spots Feed </title>
 
     <style> 
     body { 
       font-family: Arial, sans-serif; 
-      backgroundL #EAEFEF; 
+      background: #EAEFEF; 
       justify-content: center;
       padding-top: 40px; 
     } 
       
-     .center-box {
+     .create-box {
+    background: #FFF2EB;
     width: 450px;
     margin: 0 auto;
     justify-content: center;
   }
 
-  #createpost {
-    background: #FFF2EB;
+  .create-box input, .create-box textarea, .create-box select {
     padding: 25px;
     width: 100%;
     border-radius: 16px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    border: 1px solid #ddd;
   } 
       
-  #createpost h3 {
-    text-align: center;
-    margin-bottom: 10px;
+  .create-box textarea{
+    height: 80px;
   }
 
-  input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+  .post-card{
+    bakground: white;
+    padding: 15px;
+    margin-bottom: 15 px; 
+    border-radius: 8 px; 
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
   }
 
-button {
+.create-box button {
     width: 100%;
     margin-top: 15px;
     padding: 12px;
@@ -50,18 +48,18 @@ button {
     cursor: pointer;
   }
 
-  button:hover {
+ .create-box button:hover {
     background: #463de0;
   }
 
-  .feed {
+  #feed {
     width: 450px;
     margin-top: 25px;
   }
     </style>
   </head>
   <body>
-    <div id ="createpost"> 
+    <div class ="create-box"> 
     <h3> Share your Study Spot </h3>
     <input id = "spotName" placeholder = "Spot Name">
     <textarea id="description" placeholder = "Short Description"> </textarea>
@@ -75,6 +73,8 @@ button {
         </select>
     <button onclick="addPost()"> Post </button> 
     </div>
-    <div class = "feed" id="feed"> </div> 
+    <div id = "feed"></div> 
+
+    <script src="feedpage.js"></script> 
   </body>
 </html>
