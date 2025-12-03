@@ -14,14 +14,20 @@
   
 const post = document.createElement("div"); 
     post.classList.add("post-card");
-function renderFeed() { 
-      const feed = document.getElementById("feed");
-      feed.innerHTML =""; 
 
-      const card = 
-        <div class="card"> 
-        <h3>${post.name}</h3>
-        <p>${post.desc}</p>
-        <div class ="tags">${tagsHTML}</div>
-        <p class="rating">Rating: ${post.rating}</p>
+    post.innerHTML= 
+      <h4>${name} ${rating}</h4>
+      <p>${desc}</p>
+      <small><b>Tags: </b> ${tags}</small> 
+      ;
+
+    feed.prepend(post); 
+
+    document.getElementById("spotName").value="";
+    document.getElementById("description").value="";
+    document.getElementById("tags").value = ""; 
+  } 
+      
+    
+  
 
