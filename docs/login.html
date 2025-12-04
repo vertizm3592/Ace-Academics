@@ -59,10 +59,10 @@
 						if(res && res.ok){
 							window.location.href = '../src/feed.html';
 						} else {
-							showError(res && res.message ? res.message : 'Login failed.');
+							showError(res && res.message ? res.message : 'Login Error.');
 						}
 					} catch(err){
-						showError(err && err.message ? err.message : 'Login failed.');
+						showError(err && err.message ? err.message : 'Login Error.');
 					}
 				});
 			})();
