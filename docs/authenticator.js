@@ -1,8 +1,4 @@
-// authenticator.js
-// This file will handle the login authentication logic.
-// Code to validate login credentials will be added here.
 
-// Starter demo authenticator for local testing only.
 window.authenticate = function(email, password){
 	return new Promise((resolve) => {
 		setTimeout(() => {
