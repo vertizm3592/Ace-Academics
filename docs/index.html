@@ -70,8 +70,33 @@
       display: block;
     }
 
+    /* Left Quote Box */
+    .quote-box {
+      position: fixed;
+      top: 120px;
+      left: 20px;
+      width: 230px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.85);
+      border-left: 4px solid #0066cc;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 15px;
+      text-align: left;
+      font-style: italic;
+      color: #333;
+    }
+
+    .quote-author {
+      margin-top: 10px;
+      font-size: 13px;
+      font-style: normal;
+      color: #555;
+      text-align: right;
+    }
   </style>
 </head>
+
 <body>
 
   <h1>Welcome to Ace Academics!</h1>
@@ -82,10 +107,7 @@
   <ol>
     <li><a href="index.html">Home</a></li>
     <li><a href="courses.html">Courses/Topics</a></li>
-
-    <!-- 수정됨: Study Spots → Feed -->
     <li><a href="feed.html">Feed</a></li>
-
     <li><a href="studysessions.html">Study Sessions</a></li>
     <li><a href="login.html" class="signup-btn">Sign Up</a></li>
   </ol>
@@ -93,6 +115,12 @@
   <!-- Image Banner Section -->
   <div class="banner">
     <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Study banner">
+  </div>
+
+  <!-- Quote Box on the left -->
+  <div class="quote-box">
+    "Success is the sum of small efforts repeated day in and day out."
+    <div class="quote-author">– Robert Collier</div>
   </div>
 
   <script>
