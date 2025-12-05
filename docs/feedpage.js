@@ -5,7 +5,7 @@
     const tags = document.getElementById("tags").value; 
     const rating = document.getElemenetByid("rating").value; 
     
-  if (!name || !desc) { 
+  if (!name || !description) { 
     alert("Spot Name and Description are required.");
     return; 
   } 
@@ -15,11 +15,11 @@
 const post = document.createElement("div"); 
     post.classList.add("post-card");
 
-    post.innerHTML= 
+    post.innerHTML= `
       <h4>${name} ${rating}</h4>
-      <p>${desc}</p>
+      <p>${description}</p>
       <small><b>Tags: </b> ${tags}</small> 
-      ;
+      `;
 
     feed.prepend(post); 
 
