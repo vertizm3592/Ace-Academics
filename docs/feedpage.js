@@ -3,7 +3,7 @@
     const name = document.getElementById("spotName").value;
     const description = document.getElementById("description").value;
     const tags = document.getElementById("tags").value; 
-    const rating = document.getElemenetByid("rating").value; 
+    const rating = document.getElementById("rating").value; 
     
   if (!name || !description) { 
     alert("Spot Name and Description are required.");
