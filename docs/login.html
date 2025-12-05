@@ -5,18 +5,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Login — Ace Academics</title>
-		<style>
-			body{font-family:Segoe UI, system-ui, -apple-system, "Helvetica Neue", Arial;margin:0;background:#f7fafc;display:flex;align-items:center;justify-content:center;height:100vh}
-			.card{background:#ffffff;padding:24px;border-radius:8px;box-shadow:0 6px 18px  rgba(2, 45, 236, 0.08);width:360px}
-			h1{font-size:18px;margin:0 0 12px}
-			label{display:block;font-size:13px;margin-top:10px;color:#374151}
-			input{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:6px;margin-top:6px;font-size:14px}
-			button{width:100%;margin-top:16px;padding:10px;border:0;border-radius:6px;background:#0b6efd;color:#fff;font-weight:600;cursor:pointer}
-			.error{color:#b91c1c;font-size:13px;margin-top:8px;display:none}
-			.muted{font-size:13px;color:#6b7280;margin-top:10px}
-		</style>
+		<link rel="stylesheet" href="styles.css">
+		
 	</head>
-	<body>
+	<body class="login-page">
 		<main class="card" role="main" aria-labelledby="loginHeading">
 			<h1 id="loginHeading">Sign in — Ace Academics</h1>
 			<form id="loginForm" novalidate>
@@ -33,7 +25,7 @@
 			<div class="muted">Don't have an account? <a href="landing.html">Get started</a></div>
 		</main>
 
-		<script src="../src/authenticator.js"></script>
+		<script src="authenticator.js"></script>
 		<script>
 			(function(){
 				const form = document.getElementById('loginForm');
@@ -55,7 +47,7 @@
 					try{
 						const res = await (window.authenticate ? window.authenticate(email, password) : Promise.resolve({ ok: false, message: 'Authenticator not available' }));
 						if(res && res.ok){
-							window.location.href = '../src/feed.html';
+							window.location.href = 'feed.html';
 						} else {
 							showError(res && res.message ? res.message : 'Login Error.');
 						}
