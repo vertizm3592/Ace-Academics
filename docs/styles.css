@@ -1,17 +1,27 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 h1 {
   margin-top: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 /* Navigation Menu */
+nav {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
 nav ol {
   list-style: none;
   padding: 0;
@@ -19,35 +29,41 @@ nav ol {
   justify-content: center;
   gap: 20px;
   font-size: 18px;
-  margin-top: 20px;
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #0066cc;
+  color: #667eea;
 }
 
 /* Sign Up button */
 .signup-btn {
-  padding: 6px 12px;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 6px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .signup-btn:hover {
-  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  color: white !important;
 }
 
 /* Time display */
 #time {
   margin-top: 10px;
   font-size: 16px;
-  color: #555;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 /* Image Banner */
@@ -57,7 +73,7 @@ nav a:hover {
   margin: 30px auto;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .banner img {
@@ -68,14 +84,14 @@ nav a:hover {
 /* Quote Box */
 .quote-box {
   position: fixed;
-  top: 120px;
+  top: 200px;
   left: 20px;
   width: 230px;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.85);
-  border-left: 4px solid #0066cc;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-left: 4px solid #667eea;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   font-size: 15px;
   text-align: left;
   font-style: italic;
@@ -86,22 +102,52 @@ nav a:hover {
   margin-top: 10px;
   font-size: 13px;
   font-style: normal;
-  color: #555;
+  color: #667eea;
   text-align: right;
+  font-weight: 600;
+}
+
+/* Main Content Container */
+.main-content {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
 }
 
 /* Courses Page */
-ul {
+.main-content h1 {
+  color: #667eea;
+  text-shadow: none;
+  margin-bottom: 30px;
+}
+
+.main-content ul {
   list-style: none;
   padding: 0;
   margin-top: 30px;
-  font-size: 20px;
-  line-height: 35px;
+}
+
+.main-content ul li {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+}
+
+.main-content ul li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Feed Page Styles */
 body.feed-page {
-  background: #f5f5f5;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,49 +156,74 @@ body.feed-page {
 .create-box {
   background: white;
   width: 500px;
-  padding: 20px;
+  padding: 25px;
   margin-top: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+}
+
+.create-box h3 {
+  color: #667eea;
+  margin-top: 0;
 }
 
 .create-box input,
 .create-box textarea,
 .create-box select {
-  padding: 10px;
+  padding: 12px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #ddd;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.create-box input:focus,
+.create-box textarea:focus,
+.create-box select:focus {
+  outline: none;
+  border-color: #667eea;
 }
 
 .create-box textarea {
-  height: 80px;
+  height: 100px;
+  resize: vertical;
 }
 
 .post-card {
   background: white;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .create-box button {
-  padding: 10px;
-  background: #4CAF50;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 15px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .create-box button:hover {
-  background: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
 #feed {
@@ -162,112 +233,148 @@ body.feed-page {
 
 /* Study Sessions Page Styles */
 body.study-sessions-page {
-  background: #EAEFEF;
-  padding-top: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding-top: 20px;
+  min-height: 100vh;
+}
+
+.study-sessions-page h2 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin: 20px 0;
 }
 
 .center-box {
-  width: 450px;
+  width: 500px;
   margin: 0 auto;
   justify-content: center;
 }
 
 #creatediscussionForm {
-  background: #FFF2EB;
-  padding: 25px;
+  background: white;
+  padding: 30px;
   width: 100%;
-  border-radius: 16px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
   box-sizing: border-box;
 }
 
 #creatediscussionForm h3 {
   text-align: center;
   margin-bottom: 10px;
+  color: #667eea;
 }
 
 #creatediscussionForm input,
 #creatediscussionForm textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-top: 12px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   font-size: 14px;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+#creatediscussionForm input:focus,
+#creatediscussionForm textarea:focus {
+  outline: none;
+  border-color: #667eea;
 }
 
 #creatediscussionForm button {
   width: 100%;
   margin-top: 15px;
   padding: 12px;
-  background: #5a4ff3;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 10px;
-  font-size: 15px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #creatediscussionForm button:hover {
-  background: #463de0;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
 .discuss {
-  width: 450px;
+  width: 500px;
   margin-top: 25px;
 }
 
 /* Login Page Styles */
 body.login-page {
-  font-family: Segoe UI, system-ui, -apple-system, "Helvetica Neue", Arial;
-  background: #f7fafc;
+  font-family: 'Segoe UI', system-ui, -apple-system, "Helvetica Neue", Arial;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card {
   background: #ffffff;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(2, 45, 236, 0.08);
-  width: 360px;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  width: 380px;
 }
 
 .card h1 {
-  font-size: 18px;
-  margin: 0 0 12px;
+  font-size: 24px;
+  margin: 0 0 20px;
+  color: #667eea;
+  text-align: center;
+  text-shadow: none;
 }
 
 .card label {
   display: block;
-  font-size: 13px;
-  margin-top: 10px;
+  font-size: 14px;
+  margin-top: 15px;
   color: #374151;
+  font-weight: 500;
 }
 
 .card input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #e5e7eb;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-top: 6px;
   font-size: 14px;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.card input:focus {
+  outline: none;
+  border-color: #667eea;
 }
 
 .card button {
   width: 100%;
-  margin-top: 16px;
-  padding: 10px;
+  margin-top: 20px;
+  padding: 12px;
   border: 0;
-  border-radius: 6px;
-  background: #0b6efd;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
   font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
 .error {
@@ -278,9 +385,20 @@ body.login-page {
 }
 
 .muted {
-  font-size: 13px;
+  font-size: 14px;
   color: #6b7280;
-  margin-top: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.muted a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.muted a:hover {
+  text-decoration: underline;
 }
 
 /* Landing Page Styles */
@@ -288,18 +406,6 @@ body.landing-page {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   padding-bottom: 50px;
-}
-
-.hero-section {
-  text-align: center;
-  padding: 20px;
-}
-
-.hero-section h1 {
-  color: white;
-  font-size: 2.5em;
-  margin-top: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .landing-page nav {
